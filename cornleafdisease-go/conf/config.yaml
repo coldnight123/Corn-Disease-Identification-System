@@ -1,0 +1,24 @@
+name: "cornleafdisease"
+mode: "dev"
+port: 8081
+version: "v0.0.1"
+start_time: "2020-07-01"
+machine_id: 1
+
+auth:
+  jwt_expire: 8760
+
+log:
+  level: "debug"
+  filename: "cornleafdisease.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "123456"
+  dbname: "cornleaf"
+  max_open_conns: 200
+  max_idle_conns: 50
